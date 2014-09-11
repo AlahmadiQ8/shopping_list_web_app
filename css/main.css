@@ -1,0 +1,54 @@
+
+/*** set border sizing ***/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+
+/*** body background ***/
+body {
+	background-color: #2F3540;
+}
+
+/*** upper header ***/
+.upper-head {
+	background-color: #666A73;
+	width: 100%;
+	height: 230px;
+	margin-top: 0;
+}
+.upper-head h1, h2 {
+	margin: 0;
+}
+.upper-head h1 , h2{
+	font-family: 'Oswald', sans-serif;
+	color: #D9D1C7;
+	font-size: 2em;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+}
+.upper-head h2{
+	color: #2F3540;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+.head-container {
+	position: relative;
+	text-align: center;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+/*** main app container ***/
+.app-container {
+	background-color: #D9D1C7;
+	width: 370px;
+	height: 470px;
+	margin: 60px auto;
+	border-radius: 40px;
+}
