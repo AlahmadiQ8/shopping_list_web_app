@@ -55,7 +55,7 @@ body {
 .app-container {
 	background-color: #D9D1C7;
 	width: 370px;
-	/*height: 470px;*/
+	min-height: 400px;
 	margin: 60px auto;
 	border-radius: 40px;
 	padding: 30px;
@@ -81,7 +81,7 @@ body {
 	color: #888;
 	margin: 0 0 0 0;
 	padding: 5px 10px;
-	width: 296px;
+	width: 280px;
 }
 .enter-item input:focus {
 	border-radius: 30px;
@@ -91,7 +91,7 @@ body {
 
 /*** items list ***/
 .items-list {
-	/*display: none;*/
+	display: none;
 	padding: 15px;
 	font: 16px 'Coming Soon', cursive;
 	background-color: #fff;
@@ -104,6 +104,7 @@ body {
 	list-style-type: none;
 	padding: 10px 0;
 	border-bottom: 1px solid #888;
+	cursor:pointer;
 }
 .items-list li:first-child{
 	padding-top: 0;
@@ -112,13 +113,18 @@ body {
 	padding-bottom: 0;
 	border-bottom: none;
 }
+.items-list ul {
+	position: relative;
+}
 .delete {
+	display: inline;
 	font-weight: bold;
 	color: red;
 	position: absolute;
 	right: 0;
+
 	text-decoration: none;
 }
-#deleted {
+a {
 	text-decoration: line-through;
 }

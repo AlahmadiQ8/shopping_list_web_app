@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Coming+Soon|Oswald:700,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 
 <body>
@@ -21,16 +23,11 @@
 	<section class="app-container">
 		<fieldset class="enter-item">
 				<input id="item" type="text" name="name" placeholder="Enter Item Here" required>
-				<label for="item">&#43;</label>
+				<label for="item" id="plus_but"> <a href="#">&#43;</a></label>
 	    </fieldset>
 
 	    <section class="items-list">
 	    	<ul>
-	    		<li id="deleted">Eggs <a href="#" class="delete">X</a></li>
-	    		<li>Peanut Butters <a href="#" class="delete">X</a></li>
-	    		<li>Brown Rice <a href="#" class="delete">X</a></li>
-	    		<li>Tune <a href="#" class="delete">X</a></li>
-	    		<li>Shawarma <a href="#" class="delete">X</a></li>
 	    	</ul>
 	    </section>
 	</section>
