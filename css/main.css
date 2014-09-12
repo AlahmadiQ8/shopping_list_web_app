@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
      -moz-box-sizing: border-box; /* Firefox, other Gecko */
           box-sizing: border-box; /* Opera/IE 8+ */
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -15,6 +17,11 @@ body {
 /*** upper header ***/
 .upper-head {
 	background-color: #666A73;
+
+	background: -webkit-linear-gradient(to top, #666A73 70%, #2F3540 120%);
+	background:    -moz-linear-gradient(to top, #666A73 70%, #2F3540 120%);
+	background:         linear-gradient(to top, #666A73 70%, #2F3540 120%);
+
 	width: 100%;
 	height: 230px;
 	margin-top: 0;
@@ -48,7 +55,70 @@ body {
 .app-container {
 	background-color: #D9D1C7;
 	width: 370px;
-	height: 470px;
+	/*height: 470px;*/
 	margin: 60px auto;
 	border-radius: 40px;
+	padding: 30px;
+}
+
+/*** item entry ***/
+.enter-item {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.enter-item label {
+	display: inline-block;
+	font: normal 36/44px "Oswald", sans-serif;
+	color: #666A73;
+	height: 44px;
+}
+.enter-item input {
+	display: inline-block;
+	font: normal 16px 'Coming Soon', cursive;
+	border: 1px solid #c6c9cc;
+	border-radius: 30px;
+	color: #888;
+	margin: 0 0 0 0;
+	padding: 5px 10px;
+	width: 296px;
+}
+.enter-item input:focus {
+	border-radius: 30px;
+	box-shadow:inset 0 0 1px 1px #888;
+	outline: none;
+}
+
+/*** items list ***/
+.items-list {
+	/*display: none;*/
+	padding: 15px;
+	font: 16px 'Coming Soon', cursive;
+	background-color: #fff;
+	box-shadow:inset 0 0 2px 2px #8C8681;
+	border-radius: 30px;
+}
+.items-list li {
+	display: block;
+	position: relative;
+	list-style-type: none;
+	padding: 10px 0;
+	border-bottom: 1px solid #888;
+}
+.items-list li:first-child{
+	padding-top: 0;
+}
+.items-list li:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.delete {
+	font-weight: bold;
+	color: red;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+}
+#deleted {
+	text-decoration: line-through;
 }
