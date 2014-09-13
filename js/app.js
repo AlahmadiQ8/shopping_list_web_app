@@ -20,8 +20,9 @@ $(document).ready(function() {
 	});
 
 	$('ul').on('click', 'li', function() {
-		alert('clicked on item');
+		// alert('clicked on item');
 		// put middle line
+		$(this).toggleClass('completed');
 	});
 
 	$('ul').on('click', '.delete', function(e) {
